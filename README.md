@@ -8,92 +8,79 @@
 
 ## Step 2: Inserting a Fault
 
-To insert a fault, with the model open, select the point where you want to insert the fault, then right-click and insert the fault:
+To insert a fault, with the model open, select the point where you want to insert the fault, then click on the lightning bolt icon, and insert the fault as shown in the picture below:
 
-## Step 2: Inserting a Fault
-
-To insert a fault, with the model open, select the point where you want to insert the fault, then right-click and insert the fault:
-
-![Fault Insert](figures/Fault_Insert.png)
+  <img src="figures/Fault_Insert.png" width="500" />
 
 Once the fault has been inserted, the **Property Inspector** opens:
 
 You can select:
 - The fault name
-- The library (we used `mvfaultlib`)
-- The fault behavior (predefined or custom)
+- Trigger Type
+- The library (we used `mvfaultlib`, the standard library provided by MathWorks)
+- The fault behavior (either selected from the predefined options, or defined as a custom behavior)
+<img src="figures/Prop_insp.png" width="350" />
 
-![Property Inspector](figures/Prop_insp.png)
+When a new fault is created, then there is also generated a separate fault model file. This file has the same name as the original model file, with `_faultmodel` added to its name.
+(e.g., `Buck_4/Buck_BLDC_2023a_4_faultmodel.slx`)
 
-When a fault is created, a separate fault model file is generated.  
-It has the same name as the original model, with `_faultmodel` added.  
-Example: `Buck_4/Buck_BLDC_2023a_4_faultmodel.slx`
+-  If no faults have been added yet, the fault model file is created
+-  If the file already exists, it is updated with the new fault
+-  The fault model file contains all the faults associated with the original model
 
-- If no faults exist, the file is created
-- If it exists, it's updated
-- It includes all faults linked to the model
+Finally, the 'trigger type' must be selected. If **conditional** is chosen, then a condition must be defined. The Property Inspector panel automatically opens and allows the user to select and configure the desired condition.
 
-Finally, select the trigger type.  
-If **conditional**, define a condition.
+<img src="figures/Conditional.png" width="450" />
 
-![Condition](figures/Conditional.png)
-
-The **Fault Table** then opens and displays all created conditions.
+Once everything is done, the Fault Table automatically opens and displays all the conditions that have been created.
 
 ## Step 3: Creating a Condition
 
-To define more conditions:
-- Click the **"+"** in the Fault Table
-- Use the Property Inspector to edit
+To define additional conditions, you have to click on the **"+"** button in the top-left corner of the Fault Table. Each condition can then be edited through the Property Inspector.
 
-You can configure:
+Once the condition is defined, through the Property Inspector we can access to the following elements:
 
-- **Name**: of the condition
-- **Condition Expression**: e.g., `speed >= 50`
-- **Symbol Table**: lists all involved variables
+- **Name**: The name of the fault condition.
+- **Condition Expression**: The logical expression that, when evaluated as true, triggers
+the fault. (e.g., speed >= 50)
+- **Symbol Table**: A table listing all the variables involved in the condition.
 
-![Property Inspector for Conditions](figures/propInsp_conditional.png)
 
-Variable value source:
-- **Expression**: Set value via expression
-- **Model Element**: Extract from a model signal
+<img src="figures/propInsp_conditional.png" width="350" />
+
+Thanks to the symbol table, it is possible to define the source for the value of each variable.
+Two options are available:
+- **Expression**: Assigning a value using a standard expression.
+- **Model Element**: Retrieve the value from a specific model element. In this case, the user can select an element of the model (e.g., the output of a signal). Once selected, the value is automatically set to match that element.
+
+
 
 ## Step 4: Fault Management
 
-Use the **Fault Table** to switch between faults.
+To switch between faults we can use the **Fault Table**
 
-![Fault Table](figures/Fault_Table.png)
+<img src="figures/Fault_Table.png" width="550" />
 
-- Select where the fault applies (only one at a time)
-- Edit properties via the Property Inspector
-- You can apply a different fault to the same point
-
-The simulation will run using the selected faults.
+From this table, the user must select the position of the model where the fault has to be
+applied. Note: Only one position can be selected at a time.
+The fault properties can be edited through the Property Inspector; It is also possible to apply a different fault to the same position.
+Once the simulation is started, it will run using the currently selected faults.
 
 ## Step 5: Simulation
 
-To run the simulation, click **Run**.  
-> If at least one fault is present, run in **Normal** mode.
-
-Wait for the simulation to start. Duration depends on:
-- The model
-- Faults
-- Your machine
-
-To observe the fault’s effect:
-
+To run the simulation, press the **Run** button. The simulation must be executed in **Normal mode** if at least one fault is present.
+After clicking Run, the user must wait for the simulation to start. It will take a while, depending on the model, the faults applied, and on your computer.
+To observe the effects of the fault during simulation, there are two main tools:
 ### - Scope
+Displays the fault’s impact graphically over time. It is useful for tracking specific signals.
 
-Graphically shows signal changes over time.
-
-![Scope](figures/scope.png)
+<img src="figures/scope.png" width="150" />
 
 ### - Data Inspector
+This tool allows the user to inspect all model signals generated during
+each simulation. On the left side, you can see all the previously run simulations, enabling easy comparison across different runs. This is the most suitable tool for a comprehensive analysis of the simulation results.
 
-Allows inspection of all simulation signals.  
-You can compare signals across multiple runs.
-
-![Data Inspector](figures/Data_Inspector.png)
+<img src="figures/Data_Inspector.png" width="700" />
 
 ---
 
