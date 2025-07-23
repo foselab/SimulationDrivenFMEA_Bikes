@@ -8,7 +8,7 @@
 
 ## Step 2: Inserting a Fault
 
-To insert a fault, with the model open, select the point where you want to insert the fault, then click on the lightning bolt icon, and insert the fault as shown in the picture below:
+To insert a fault, with the model open, select the point where you want to insert the fault, then click on the *lightning bolt icon*, and insert the fault as shown in the picture below:
 
   <img src="figures/Fault_Insert.png" width="500" />
 
@@ -21,30 +21,29 @@ You can select:
 - The fault behavior (either selected from the predefined options, or defined as a custom behavior)
 <img src="figures/Prop_insp.png" width="350" />
 
-When a new fault is created, then there is also generated a separate fault model file. This file has the same name as the original model file, with `_faultmodel` added to its name.
-(e.g., `Buck_4/Buck_BLDC_2023a_4_faultmodel.slx`)
+When a new fault is created, then there is also generated a separate fault model file. This file has the same name as the original model file, with `_faultmodel` added to its name. *(e.g., `Buck_4/Buck_BLDC_2023a_4_faultmodel.slx`)*
 
 -  If no faults have been added yet, the fault model file is created
 -  If the file already exists, it is updated with the new fault
 -  The fault model file contains all the faults associated with the original model
+  
+Once everything is done, the *Fault Table* automatically opens and displays all the faults and the conditions that have been created.
 
-Finally, the 'trigger type' must be selected. If **conditional** is chosen, then a condition must be defined. The Property Inspector panel automatically opens and allows the user to select and configure the desired condition.
+When the 'trigger type' has to be selected, you have to choose between *timed* or *conditional*. If **conditional** is chosen, then a condition must be defined. 
 
-<img src="figures/Conditional.png" width="450" />
+To insert a new condition, you have to: 
+- Take the fault table, here you can modify the *fault list* or the *conditional list*, consider the **Conditional List**, and add the condition 
+- Once you've added the condition, you have to link the condition to the fault through the property inspector
 
-Once everything is done, the Fault Table automatically opens and displays all the conditions that have been created.
 
-## Step 3: Creating a Condition
-
+## Step 4: Creating a Condition
 To define additional conditions, you have to click on the **"+"** button in the top-left corner of the Fault Table. Each condition can then be edited through the Property Inspector.
 
-Once the condition is defined, through the Property Inspector we can access to the following elements:
-
+Once the condition is defined, through the Property Inspector, we can access the following elements:
 - **Name**: The name of the fault condition.
 - **Condition Expression**: The logical expression that, when evaluated as true, triggers
 the fault. (e.g., speed >= 50)
 - **Symbol Table**: A table listing all the variables involved in the condition.
-
 
 <img src="figures/propInsp_conditional.png" width="350" />
 
@@ -57,7 +56,7 @@ Two options are available:
 
 ## Step 4: Fault Management
 
-To switch between faults we can use the **Fault Table**
+To switch between faults, we can use the **Fault Table**
 
 <img src="figures/Fault_Table.png" width="550" />
 
