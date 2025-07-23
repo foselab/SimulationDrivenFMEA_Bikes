@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="c15c8919-1e23-46e5-a7c8-3380fe3dfd69">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="8ab6c7ef-95e6-4625-85d0-5f2e6a3bbd0f">
+      <condition>speed &gt;= 50 &amp; speed &lt;= 100</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="f74f6a61-35f6-4689-bb85-aeb2ce0e6adf"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="14b0c390-54ec-44cb-b415-365632ec891e"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="46902d9e-0ae5-4b8e-9e3f-e611516f88ea"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="78fc7dcb-20b1-4330-b941-28a58cfaf638"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="3ff9922b-6a4a-4890-9a5e-21c49b4b3967"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="37f55eb2-0ca9-418e-b721-c969f77d4ea8"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="0efd4587-38b3-4317-ac92-ac83369a07b2"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="3f2195f8-b17c-4de2-91db-565d050b0209"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="6d7690a5-0928-4fd1-b8dc-1a1577f5659d"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="af8037c9-1e61-4b65-82d1-eb7101ecf023"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="03d0edd8-a066-4eba-92f8-d8a50f1f9a3a"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="797d2f2f-1863-408f-a164-09e14e6a95eb"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SpeedCondition1</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="8185266d-a725-4fc3-8252-2518bf9f7415">
+        <modelElementID>Outport|Buck_BLDC_2023a_4:8582|1</modelElementID>
+        <modelElementName>Buck_BLDC_2023a_4/Desired speed/Outport/1</modelElementName>
+        <name>speed</name>
+      </symbols>
+    </conditionals>
+    <conditionals type="faultinfo.conditional.Conditional" uuid="d09f58de-b603-4bab-97bd-ade5c99e521a">
+      <condition>speed &lt;=50 | speed &gt;= 100</condition>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="a134e178-092e-4758-8232-e4b1f6e260a4"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="f8bcc04c-030c-4828-9975-2501281f3b40"/>
+      <conditionalTriggers type="faultinfo.ConditionalTrigger" uuid="d1068ab1-6ed3-4711-aa94-f0d49db427fb"/>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SpeedCondition2</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ModelElementSymbol" uuid="68c7cc70-a6b5-4311-bd68-8a1d31bd6a79">
+        <modelElementID>Outport|Buck_BLDC_2023a_4:8582|1</modelElementID>
+        <modelElementName>Buck_BLDC_2023a_4/Desired speed/Outport/1</modelElementName>
+        <name>speed</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="7039b08f-f591-459f-b69e-acd5859593aa">
+      <activeFault type="faultinfo.SLFault" uuid="2834a609-0ca6-47ed-b23c-6dff2e6a0158"/>
+      <faultedEntityID>Outport|Buck_BLDC_2023a_4:9044|1</faultedEntityID>
+      <faultedEntityName>Buck_BLDC_2023a_4/Sensor/Outport/1</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="2834a609-0ca6-47ed-b23c-6dff2e6a0158">
+        <faultDescription></faultDescription>
+        <faultName>Constant_Sector</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="a134e178-092e-4758-8232-e4b1f6e260a4">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="c9c0c00e-505a-4811-9970-a10071befcb8">
+        <faultDescription></faultDescription>
+        <faultName>Null_Sector</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="af8037c9-1e61-4b65-82d1-eb7101ecf023">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="e1385496-af44-4229-80cf-be90c3bcba98">
+        <faultDescription></faultDescription>
+        <faultName>Dirty_Sector</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="46902d9e-0ae5-4b8e-9e3f-e611516f88ea">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="2de50060-6181-4ce4-844b-ebcb6092df21">
+        <faultDescription></faultDescription>
+        <faultName>Gained_Sector</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="78fc7dcb-20b1-4330-b941-28a58cfaf638">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="13831043-ebd2-4f17-bb17-e6a1467bfdd8">
+        <faultDescription></faultDescription>
+        <faultName>Delayed_Sector</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="3ff9922b-6a4a-4890-9a5e-21c49b4b3967">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>false</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="92e1f3ea-d1c7-4226-b954-8be9982c06f0">
+      <activeFault type="faultinfo.SLFault" uuid="7b3081d3-6d0c-4616-a3e2-2b372b109b84"/>
+      <faultedEntityID>Outport|Buck_BLDC_2023a_4:9044|2</faultedEntityID>
+      <faultedEntityName>Buck_BLDC_2023a_4/Sensor/Outport/2</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="61406983-ede3-4879-9f21-d92090711c50">
+        <faultDescription></faultDescription>
+        <faultName>Null_Speed</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="0efd4587-38b3-4317-ac92-ac83369a07b2">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="7b3081d3-6d0c-4616-a3e2-2b372b109b84">
+        <faultDescription></faultDescription>
+        <faultName>Dirty_Speed</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="f74f6a61-35f6-4689-bb85-aeb2ce0e6adf">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="7c76944c-80dc-40d0-97c9-9d5cd7e3d5ef">
+        <faultDescription></faultDescription>
+        <faultName>Gained_Speed</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="14b0c390-54ec-44cb-b415-365632ec891e">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="3261c37d-b070-4e0e-9306-76aed90d6215">
+        <faultDescription></faultDescription>
+        <faultName>Delayed_Speed</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="3f2195f8-b17c-4de2-91db-565d050b0209">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="e41ae3eb-c09d-4725-a93f-6722cad54bf9">
+        <faultDescription></faultDescription>
+        <faultName>Constant_Speed</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="6d7690a5-0928-4fd1-b8dc-1a1577f5659d">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>false</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="0a9096da-25bf-489d-aad0-e7cd84e11ef5">
+      <activeFault type="faultinfo.SLFault" uuid="9b24be69-f832-4f02-b02a-0ad750107963"/>
+      <faultedEntityID>Outport|Buck_BLDC_2023a_4:8941|1</faultedEntityID>
+      <faultedEntityName>Buck_BLDC_2023a_4/Controller/Discrete PID Controller/Outport/1</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="e28a1814-8b44-4ff1-926c-92207ce061aa">
+        <faultDescription></faultDescription>
+        <faultName>Null_PID</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="03d0edd8-a066-4eba-92f8-d8a50f1f9a3a">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="399c0888-9c31-4bbc-b5a4-9a580403ab18">
+        <faultDescription></faultDescription>
+        <faultName>Dirty_PID</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="f8bcc04c-030c-4828-9975-2501281f3b40">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="3fe3e7ab-c15f-4c0a-828f-a86553f84720">
+        <faultDescription></faultDescription>
+        <faultName>Gained_PID</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="797d2f2f-1863-408f-a164-09e14e6a95eb">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="d9bf7687-f589-4946-8744-bd9f3fe5ada4">
+        <faultDescription></faultDescription>
+        <faultName>Negate_PID</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="d1068ab1-6ed3-4711-aa94-f0d49db427fb">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <faults type="faultinfo.SLFault" uuid="9b24be69-f832-4f02-b02a-0ad750107963">
+        <faultDescription></faultDescription>
+        <faultName>Constant_PID</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.ConditionalTrigger" uuid="37f55eb2-0ca9-418e-b721-c969f77d4ea8">
+          <isPersistent>false</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>false</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2025-07-23T17:58:37</lastUpdatedAt>
+    <modelName>Buck_BLDC_2023a_4</modelName>
+    <modelUUID>3f5c806a-d5f7-4781-93c7-e73e1c8f64f6</modelUUID>
+  </faultinfo.FaultContainerSet>
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="bf2d043e-9233-4a63-b962-1092044f1ba9">
+    <failureModes type="faultinfo.FailureMode" uuid="e257b519-efe0-45a2-904e-b31c5a3775b3">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="2834a609-0ca6-47ed-b23c-6dff2e6a0158"/>
+      <faultSubsystemName>Constant_Sector</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="6b2e0f26-9266-40b6-9829-6fb3a31ca511">
+      <ID>6</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="61406983-ede3-4879-9f21-d92090711c50"/>
+      <faultSubsystemName>Null_Speed</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="ea72f503-4bb2-4e71-91d3-5cb3e4193fdb">
+      <ID>11</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="7b3081d3-6d0c-4616-a3e2-2b372b109b84"/>
+      <faultSubsystemName>Dirty_Speed</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="ec80ca27-ba6c-4d4f-926f-fe53ca401af8">
+      <ID>16</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="7c76944c-80dc-40d0-97c9-9d5cd7e3d5ef"/>
+      <faultSubsystemName>Gained_Speed</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="1b508899-9583-492d-a478-0702f8de0f9a">
+      <ID>20</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="3261c37d-b070-4e0e-9306-76aed90d6215"/>
+      <faultSubsystemName>Delayed_Speed</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="c72192e4-61ec-484c-95b6-c1546c27e811">
+      <ID>24</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="e41ae3eb-c09d-4725-a93f-6722cad54bf9"/>
+      <faultSubsystemName>Constant_Speed</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="2b62c05c-3d42-4265-8ee6-84f44d1cef17">
+      <ID>29</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="c9c0c00e-505a-4811-9970-a10071befcb8"/>
+      <faultSubsystemName>Null_Sector</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="c86e4e67-794c-4151-9935-c66a2b771485">
+      <ID>34</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="e1385496-af44-4229-80cf-be90c3bcba98"/>
+      <faultSubsystemName>Dirty_Sector</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="3527ea26-0fbe-4ecb-9d77-44aac6965919">
+      <ID>39</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="2de50060-6181-4ce4-844b-ebcb6092df21"/>
+      <faultSubsystemName>Gained_Sector</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="d097bc7b-5612-4598-86ab-15880796739f">
+      <ID>43</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="13831043-ebd2-4f17-bb17-e6a1467bfdd8"/>
+      <faultSubsystemName>Delayed_Sector</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="76a1bbd2-2885-4bad-aab9-c3eb7d05e10a">
+      <ID>52</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="e28a1814-8b44-4ff1-926c-92207ce061aa"/>
+      <faultSubsystemName>Null_PID</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="27c30476-0d43-46dd-8fdc-5b8970c0a289">
+      <ID>57</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="399c0888-9c31-4bbc-b5a4-9a580403ab18"/>
+      <faultSubsystemName>Dirty_PID</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="081c57eb-d194-45b7-8a4c-df24743cc5dc">
+      <ID>62</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="3fe3e7ab-c15f-4c0a-828f-a86553f84720"/>
+      <faultSubsystemName>Gained_PID</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="b88ac713-b646-418b-a109-390ffb33bd9b">
+      <ID>66</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="d9bf7687-f589-4946-8744-bd9f3fe5ada4"/>
+      <faultSubsystemName>Negate_PID</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="27beb26f-821a-47d3-8656-741018fbec22">
+      <ID>70</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="9b24be69-f832-4f02-b02a-0ad750107963"/>
+      <faultSubsystemName>Constant_PID</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>Buck_BLDC_2023a_4_FaultModel</faultModelName>
+    <faultModelUUID>1ef5b91e-9ef7-4b28-9de5-98c59870f109</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+</MF0>

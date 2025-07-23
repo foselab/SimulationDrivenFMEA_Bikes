@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="9cdcc8cb-8ebe-4345-ad36-6f074a6e3271">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="639f3b39-14b6-48f7-b1c8-f2ec2ec90a1b">
+      <condition>x == true</condition>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SampleConditional</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ExpressionSymbol" uuid="3c79f8fc-2fbc-4648-bb65-de7ceacfb0ef">
+        <expression>true</expression>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="790c94d3-4a84-475e-bd49-c18f217a29a0">
+      <activeFault type="faultinfo.SLFault" uuid="3e7fa0ef-2b78-4fee-9d55-cd1b677eaa95"/>
+      <faultedEntityID>Outport|Simple_Buck_BLDC_4:96|1</faultedEntityID>
+      <faultedEntityName>Simple_Buck_BLDC_4/Sensor/Outport/1</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="3e7fa0ef-2b78-4fee-9d55-cd1b677eaa95">
+        <faultDescription></faultDescription>
+        <faultName>Sector_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.PermanentTrigger" uuid="9f63f448-011f-4ce2-be6b-bce7bc5fc3db">
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="1aa1b238-4140-40ae-861c-d27a96c0e971">
+      <activeFault type="faultinfo.SLFault" uuid="aad9980b-8645-4e1d-8ca3-4db828e1a5d0"/>
+      <faultedEntityID>Outport|Simple_Buck_BLDC_4:96|2</faultedEntityID>
+      <faultedEntityName>Simple_Buck_BLDC_4/Sensor/Outport/2</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="aad9980b-8645-4e1d-8ca3-4db828e1a5d0">
+        <faultDescription></faultDescription>
+        <faultName>MeasuredSpeed_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.PermanentTrigger" uuid="6c67a1f2-18db-45d6-a86a-32a4b3760162">
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <faultContainers type="faultinfo.FaultContainer" uuid="a1d9f32a-1920-4fe4-a8f1-16da200bf914">
+      <activeFault type="faultinfo.SLFault" uuid="bf153888-2d37-47cb-9eb7-10f33ba06048"/>
+      <faultedEntityID>Outport|Simple_Buck_BLDC_4:6|1</faultedEntityID>
+      <faultedEntityName>Simple_Buck_BLDC_4/Controller/Discrete PID Controller/Outport/1</faultedEntityName>
+      <faults type="faultinfo.SLFault" uuid="bf153888-2d37-47cb-9eb7-10f33ba06048">
+        <faultDescription></faultDescription>
+        <faultName>y_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.PermanentTrigger" uuid="ad14e0a4-a634-4cb2-9ee1-0a23e1ac09ca">
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>true</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2025-06-03T16:33:25</lastUpdatedAt>
+    <modelName>Simple_Buck_BLDC_4</modelName>
+    <modelUUID>6fe36bc1-6679-43e9-9dc8-a8f422e0ea88</modelUUID>
+  </faultinfo.FaultContainerSet>
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="f9ee8089-b9e0-4c61-baea-737a06fdd8e4">
+    <failureModes type="faultinfo.FailureMode" uuid="0c3f8830-e16e-4b62-8c26-d9dc0992d690">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="3e7fa0ef-2b78-4fee-9d55-cd1b677eaa95"/>
+      <faultSubsystemName>Sector_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="741ded7b-9358-4265-8a4c-0469406a02a5">
+      <ID>6</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="aad9980b-8645-4e1d-8ca3-4db828e1a5d0"/>
+      <faultSubsystemName>MeasuredSpeed_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <failureModes type="faultinfo.FailureMode" uuid="5c7d36fb-2346-457d-8511-91a12baad9c1">
+      <ID>11</ID>
+      <associatedFaults type="faultinfo.SLFault" uuid="bf153888-2d37-47cb-9eb7-10f33ba06048"/>
+      <faultSubsystemName>y_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>Simple_Buck_BLDC_4_FaultModel</faultModelName>
+    <faultModelUUID>4875238e-df8b-496a-9bb3-b65780b2dac0</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+</MF0>
