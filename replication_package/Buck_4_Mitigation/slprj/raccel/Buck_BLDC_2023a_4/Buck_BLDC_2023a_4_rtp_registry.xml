@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="c889121c-ce32-4402-a02a-eafa9a4a5f83">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="d69b411b-671f-493a-b098-5c89bf656f29"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>9</valueIndices>
+    <valueIndices>9</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="004f07eb-a0fb-462c-842a-f8ba13f13d1c">
+    <modelName>Buck_BLDC_2023a_4</modelName>
+  </slsa.mm.rtpregistry.ModelMetadata>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="3d608e70-af52-4ae1-8d67-62e7fb788d3b">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="5c73e0ad-37fc-46c6-92bb-a2b47e63cd96"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="236b9268-062f-4c71-b463-6d434dac1166"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="5d85ad18-bb65-4e8e-aedc-3d45caf02193">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="dfbfabfc-f1f4-4dac-99be-6e07a3905bdd"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="4b03a346-0235-44c8-b398-b521a1f23518"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="dfbfabfc-f1f4-4dac-99be-6e07a3905bdd">
+    <blockPath>Buck_BLDC_2023a_4/Desired speed/Repeating Sequence Interpolated2/LimitedCounter/Wrap To Zero</blockPath>
+    <name>Threshold</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="5d85ad18-bb65-4e8e-aedc-3d45caf02193"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="4b03a346-0235-44c8-b398-b521a1f23518">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="5d85ad18-bb65-4e8e-aedc-3d45caf02193"/>
+    <segmentIndex>1</segmentIndex>
+    <valueIndices>0</valueIndices>
+    <valueIndices>0</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="d69b411b-671f-493a-b098-5c89bf656f29">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="a125a8cc-a156-48e7-974d-2d67f099efc9"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="c889121c-ce32-4402-a02a-eafa9a4a5f83"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="a125a8cc-a156-48e7-974d-2d67f099efc9">
+    <blockPath>Buck_BLDC_2023a_4/Buck Converter/PWM Generator (DC-DC)/Sawtooth Generator/Model/Constant3</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="d69b411b-671f-493a-b098-5c89bf656f29"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="5c73e0ad-37fc-46c6-92bb-a2b47e63cd96">
+    <blockPath>Buck_BLDC_2023a_4/Buck Converter/PWM Generator (DC-DC)/Sawtooth Generator/Model/Constant2</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="3d608e70-af52-4ae1-8d67-62e7fb788d3b"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="e3acadf3-1f78-4373-8547-b3fb415b8b69">
+    <blockPath>Buck_BLDC_2023a_4/Buck Converter/PWM Generator (DC-DC)/Sawtooth Generator/Model/1\ib1</blockPath>
+    <name>Gain</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="c754f5fc-5ab0-4132-8390-dc538e5e2a42"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="236b9268-062f-4c71-b463-6d434dac1166">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="3d608e70-af52-4ae1-8d67-62e7fb788d3b"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>10</valueIndices>
+    <valueIndices>10</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="c754f5fc-5ab0-4132-8390-dc538e5e2a42">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="e3acadf3-1f78-4373-8547-b3fb415b8b69"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="a4bc7951-9d7e-4cb9-87f9-883a0daffa08"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="a4bc7951-9d7e-4cb9-87f9-883a0daffa08">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="c754f5fc-5ab0-4132-8390-dc538e5e2a42"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>11</valueIndices>
+    <valueIndices>11</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+</MF0>
