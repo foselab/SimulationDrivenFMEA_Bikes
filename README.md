@@ -12,16 +12,17 @@ To insert a fault, with the model open, select the point where you want to inser
 
   <img src="figures/Fault_Insert.png" width="500" />
 
-Once the fault has been inserted, the **Property Inspector** opens:
+Once the fault has been inserted, the **Fault Properties** opens:
 
 You can select:
-- The fault name
-- Trigger Type
-- The library (we used `mvfaultlib`, the standard library provided by MathWorks)
-- The fault behavior (either selected from the predefined options, or defined as a custom behavior)
-<img src="figures/Prop_insp.png" width="350" />
+- The *fault name*
+- The *fault library* (we used `mvfaultlib`, the standard library provided by MathWorks)
+- The *fault behavior* (either selected from the predefined options, or defined as a custom behavior)
+- The *Trigger Type*
 
-When a new fault is created, then there is also generated a separate fault model file. This file has the same name as the original model file, with `_faultmodel` added to its name. *(e.g., `Buck_4/Buck_BLDC_2023a_4_faultmodel.slx`)*
+<img src="figures/Faul_Injection.png" width="500" />
+
+When a new fault is created, then there is also generated a separate fault model file. This file has the same name as the original model file, with `_FaultModel` added to its name. *(e.g., `Buck_4/Buck_BLDC_2023a_4_FaultModel.slx`)*
 
 -  If no faults have been added yet, the fault model file is created
 -  If the file already exists, it is updated with the new fault
@@ -31,9 +32,9 @@ Once everything is done, the *Fault Table* automatically opens and displays all 
 
 When the 'trigger type' has to be selected, you have to choose between *timed* or *conditional*. If **conditional** is chosen, then a condition must be defined. 
 
-To insert a new condition, you have to: 
-- Take the fault table, here you can modify the *fault list* or the *conditional list*, consider the **Conditional List**, and add the condition 
-- Once you've added the condition, you have to link the condition to the fault through the property inspector
+To insert a new *condition*, you have to: 
+- Take the fault table, here you can modify the *fault list* or the *conditional list*, consider the **Conditional List**, and add the condition you want using the *green cross*
+- Once you've added the condition, you have to link the condition to the fault through the *property inspector* under the *fault* part
 
 
 ## Step 4: Creating a Condition
@@ -53,15 +54,12 @@ Two options are available:
 - **Model Element**: Retrieve the value from a specific model element. In this case, the user can select an element of the model (e.g., the output of a signal). Once selected, the value is automatically set to match that element.
 
 
-
 ## Step 4: Fault Management
-
 To switch between faults, we can use the **Fault Table**
 
 <img src="figures/Fault_Table.png" width="550" />
 
-From this table, the user must select the position of the model where the fault has to be
-applied. Note: Only one position can be selected at a time.
+From this table, the user must select the position of the model where the fault has to be applied. Note: Only one position can be selected at a time.
 The fault properties can be edited through the Property Inspector; It is also possible to apply a different fault to the same position.
 Once the simulation is started, it will run using the currently selected faults.
 
