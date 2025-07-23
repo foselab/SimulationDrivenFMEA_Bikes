@@ -104,6 +104,14 @@ each simulation. On the left side, you can see all the previously run simulation
 <img src="figures/Data_Inspector.png" width="700" />
 
 ---
+## Contributors
 
-### 🔗 [GitHub Repository](https://github.com/foselab/SimulationDrivenFMEA_Bikes)
+The following authors contributed to the _Failure Modes and Effects Analysis: An Experience from the E-Bike Domain_ paper:
+
+- _Federico Conti_, University of Bergamo, Italy
+- _Andrea Bombarda_, University of Bergamo, Italy
+- _Marcello Minervini_, University of Bergamo, Italy
+- _Aurora Francesca Zanenga_, University of Bergamo, Italy
+- _Claudio Menghi_, University of Bergamo, Italy and McMaster University, Canada
+
 
