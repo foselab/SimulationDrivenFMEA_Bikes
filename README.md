@@ -45,14 +45,22 @@ You can select:
 
 <img src="figures/Faul_Injection.png" width="500" />
 
-When a new fault is created, then there is also generated a separate fault model file. This file has the same name as the original model file, with `_FaultModel` added to its name. *(e.g., `Buck_4/Buck_BLDC_2023a_4_FaultModel.slx`)*
+When a new fault is created, a separate fault model file is also generated. This file has the same name as the original model file, with `_FaultModel` added to its name. *(e.g., `Buck_4/Buck_BLDC_2023a_4_FaultModel.slx`)*
 
 -  If no faults have been added yet, the fault model file is created
 -  If the file already exists, it is updated with the new fault
 -  The fault model file contains all the faults associated with the original model
-  
+
+Note: It could happen (after a certain number of faults) that it will not be allowed anymore to add new faults to the *FaultModel* file; In that scenario, you have to create a new file to add more faults
+
+<img src="figures/New_Fault_Model.png" width="500" />
+
+
 Once everything is done, the *Fault Table* automatically opens and displays all the faults and the conditions that have been created.
+
 Note: If the Fault Table does not open automatically, you can open it manually by clicking on the corresponding icon in the top toolbar
+
+<img src="figures/Faul_Table_button.png" width="350" />
 
 When the 'trigger type' has to be selected, you have to choose between *timed* or *conditional*. If **conditional** is chosen, then a condition must be defined. 
 
@@ -61,7 +69,7 @@ To insert a new *condition*, you have to:
 - Once you've added the condition, you have to link the condition to the fault through the *property inspector* under the *fault* part
 
 
-## Step 4: Creating a Condition
+## Step 3: Creating a Condition
 To define additional conditions, you have to click on the **"+"** button in the top-left corner of the Fault Table. Each condition can then be edited through the Property Inspector.
 
 Once the condition is defined, through the Property Inspector, we can access the following elements:
@@ -92,6 +100,7 @@ Once the simulation is started, it will run using the currently selected faults.
 To run the simulation, press the **Run** button. The simulation must be executed in **Normal mode** if at least one fault is present.
 After clicking Run, the user must wait for the simulation to start. It will take a while, depending on the model, the faults applied, and on your computer.
 To observe the effects of the fault during simulation, there are two main tools:
+
 ### - Scope
 Displays the fault’s impact graphically over time. It is useful for tracking specific signals.
 
@@ -101,7 +110,31 @@ Displays the fault’s impact graphically over time. It is useful for tracking s
 This tool allows the user to inspect all model signals generated during
 each simulation. On the left side, you can see all the previously run simulations, enabling easy comparison across different runs. This is the most suitable tool for a comprehensive analysis of the simulation results.
 
-<img src="figures/Data_Inspector.png" width="700" />
+<img src="figures/Data_Inspector_our.png" width="700" />
+
+
+
+## Our Experiment
+If you're interested in replicating our work, you have to go through the following steps:
+
+1. Opening the model in the Buck_4 folder, model path: *Buck_4/Buck_BLDC_2023a_4.slx*
+   <img src="figures/model.png" width="800" />
+   
+2. You can see the fault we inserted in the fault table.
+- Open the fault table through the toolbar at the top of the program (select "APPS" -> "Fault Analyzer" -> "fault table")
+<img src="figures/Faul_Table_button.png" width="300" />
+- Once the fault table is open, you should see the following faults
+<img src="figures/Our_Fault_Table.png" width="700" />
+
+3. To run the simulation, you have to press the "run" button at the top of the screen, under the "SIMULATE" part of the "Fault Analyzer" tool
+<img src="figures/run.png" width="200" />
+
+4. Once the simulation is done, you are able to see the results:
+- Press the *Data Inspector* button
+<img src="figures/data_inspector_button.png" width="150" />
+
+- See and compare the results of the simulation
+<img src="figures/Data_Inspector_our.png" width="700" />
 
 ---
 ## Contributors
