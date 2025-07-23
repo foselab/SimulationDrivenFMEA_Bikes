@@ -1,5 +1,28 @@
 # Failure Modes and Effects Analysis: An Experience from the E-Bike Domain
 
+This repository contains the necessary files to replicate the experiments described in the *Failure Modes and Effects Analysis: An Experience from the E-Bike Domain* paper. The experiments involve using the Simulink® Fault Analyzer tool and Simulink models to evaluate model safety against faults.
+
+## Repository Folders
+
+This repository contains a folder called `Replication_Package`.
+The folder contains:
+
+- two Simulink models (one including only faults, and one including mitigation strategies).
+- all figures used in the paper and reporting the simulation results with all the analyzed faults.
+- the transcripts of the structured interview we conducted with our domain expert.
+
+
+## Requirements
+
+To run the experiments and be able to open the Simulink models, ensure the following software is installed:
+
+- [MATLAB](https://it.mathworks.com/products/matlab.html?requestedDomain) version R2024a or newer (we used R2024a Update 5 - 24.1.0.2653294) and the following Add-Ons:
+ - Simulink
+  - Simulink Test
+  - Simscape Electrical (Simscape)
+  - Parallel Computing Toolbox
+  - Simulink Fault Analyzer R2024a v24.1
+
 ## Step 1: Approach to the Model
 
 - Open the Simulink model from the corresponding folder:
