@@ -29,6 +29,7 @@ When a new fault is created, then there is also generated a separate fault model
 -  The fault model file contains all the faults associated with the original model
   
 Once everything is done, the *Fault Table* automatically opens and displays all the faults and the conditions that have been created.
+Note: If the Fault Table does not open automatically, you can open it manually by clicking on the corresponding icon in the top toolbar
 
 When the 'trigger type' has to be selected, you have to choose between *timed* or *conditional*. If **conditional** is chosen, then a condition must be defined. 
 
