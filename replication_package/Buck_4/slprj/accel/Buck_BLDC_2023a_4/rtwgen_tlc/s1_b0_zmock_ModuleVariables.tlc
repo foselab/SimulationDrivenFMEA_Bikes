@@ -1,0 +1,6 @@
+%implements s1_b0_zmock_ModuleVariables "C"
+
+%function ModuleVariables(block) Output
+
+static real_T tmp[6] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+%endfunction
