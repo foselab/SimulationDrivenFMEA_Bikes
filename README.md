@@ -29,29 +29,30 @@ If you're interested in replicating our work, please follow these steps:
 1. Open the model in the Buck_4 folder (`Replication_Package/Buck_4/Buck_BLDC_2023a_4.slx`)
    <img src="figures/model.png" width="800" />
    
-2. You can see the fault we inserted in the fault table.
+2. The faults we report in the paper are available in the *Fault Table*.
 - Open the fault table through the toolbar at the top of the program (select "APPS" -> "Fault Analyzer" -> "fault table")
 <img src="figures/Faul_Table_button.png" width="300" />
 - Once the fault table is open, you should see the following faults
 <img src="figures/Our_Fault_Table.png" width="700" />
 
-3. To run the simulation, you have to press the "run" button at the top of the screen, under the "SIMULATE" part of the "Fault Analyzer" tool
+3. To run the simulation, press the "run" button at the top of the screen, under the "SIMULATE" section of the "Fault Analyzer" tool
 <img src="figures/run.png" width="200" />
 
-4. Once the simulation is done, you are able to see the results:
+4. Once the simulation is done, the results can be seen:
 - Press the *Data Inspector* button
 <img src="figures/data_inspector_button.png" width="150" />
 
 - See and compare the results of the simulation
 <img src="figures/Data_Inspector_our.png" width="700" />
 
-## Step 1: Approach to the Model
+## Extending our work by adding new faults
+### Step 1: Approach to the Model
 
 - Open the Simulink model from the corresponding folder:
   - For the original model, open the `Buck_4` folder. Model path: *Buck_4/Buck_BLDC_2023a_4.slx*
   - For the mitigation version, use: *Buck_4_Mitigation/Buck_BLDC_2023a_4.slx*
 
-## Step 2: Inserting a Fault
+### Step 2: Inserting a Fault
 
 To insert a fault, with the model open, select the point where you want to insert the fault, then click on the *lightning bolt icon*, and insert the fault as shown in the picture below:
 
@@ -91,7 +92,7 @@ To insert a new *condition*, you have to:
 - Once you've added the condition, you have to link the condition to the fault through the *property inspector* under the *fault* part
 
 
-## Step 3: Creating a Condition
+### Step 3: Creating a Condition
 To define additional conditions, you have to click on the **"+"** button in the top-left corner of the Fault Table. Each condition can then be edited through the Property Inspector.
 
 Once the condition is defined, through the Property Inspector, we can access the following elements:
@@ -108,7 +109,7 @@ Two options are available:
 - **Model Element**: Retrieve the value from a specific model element. In this case, the user can select an element of the model (e.g., the output of a signal). Once selected, the value is automatically set to match that element.
 
 
-## Step 4: Fault Management
+### Step 4: Fault Management
 To switch between faults, we can use the **Fault Table**
 
 <img src="figures/Fault_Table.png" width="550" />
@@ -119,18 +120,18 @@ Note: It is possible to select more than one position at a time, but for any pos
 The fault properties can be edited through the Property Inspector; It is also possible to apply a different fault to the same position.
 Once the simulation is started, it will run using the currently selected faults.
 
-## Step 5: Simulation
+### Step 5: Simulation
 
 To run the simulation, press the **Run** button. The simulation must be executed in **Normal mode** if at least one fault is present.
 After clicking Run, the user must wait for the simulation to start. It will take a while, depending on the model, the faults applied, and on your computer.
 To observe the effects of the fault during simulation, there are two main tools:
 
-### - Scope
+#### - Scope
 Displays the fault’s impact graphically over time. It is useful for tracking specific signals.
 
 <img src="figures/scope.png" width="150" />
 
-### - Data Inspector
+#### - Data Inspector
 This tool allows the user to inspect all model signals generated during
 each simulation. On the left side, you can see all the previously run simulations, enabling easy comparison across different runs. This is the most suitable tool for a comprehensive analysis of the simulation results.
 
