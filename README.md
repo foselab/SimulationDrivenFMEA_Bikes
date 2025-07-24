@@ -23,6 +23,28 @@ To run the experiments and be able to open the Simulink models, ensure the follo
   - Parallel Computing Toolbox
   - Simulink Fault Analyzer R2024a v24.1
 
+## Replicating Our Experiment
+If you're interested in replicating our work, please follow these steps:
+
+1. Open the model in the Buck_4 folder (`Replication_Package/Buck_4/Buck_BLDC_2023a_4.slx`)
+   <img src="figures/model.png" width="800" />
+   
+2. You can see the fault we inserted in the fault table.
+- Open the fault table through the toolbar at the top of the program (select "APPS" -> "Fault Analyzer" -> "fault table")
+<img src="figures/Faul_Table_button.png" width="300" />
+- Once the fault table is open, you should see the following faults
+<img src="figures/Our_Fault_Table.png" width="700" />
+
+3. To run the simulation, you have to press the "run" button at the top of the screen, under the "SIMULATE" part of the "Fault Analyzer" tool
+<img src="figures/run.png" width="200" />
+
+4. Once the simulation is done, you are able to see the results:
+- Press the *Data Inspector* button
+<img src="figures/data_inspector_button.png" width="150" />
+
+- See and compare the results of the simulation
+<img src="figures/Data_Inspector_our.png" width="700" />
+
 ## Step 1: Approach to the Model
 
 - Open the Simulink model from the corresponding folder:
@@ -114,29 +136,6 @@ each simulation. On the left side, you can see all the previously run simulation
 
 <img src="figures/Data_Inspector_our.png" width="700" />
 
-
-
-## Our Experiment
-If you're interested in replicating our work, you have to go through the following steps:
-
-1. Opening the model in the Buck_4 folder, model path: *Buck_4/Buck_BLDC_2023a_4.slx*
-   <img src="figures/model.png" width="800" />
-   
-2. You can see the fault we inserted in the fault table.
-- Open the fault table through the toolbar at the top of the program (select "APPS" -> "Fault Analyzer" -> "fault table")
-<img src="figures/Faul_Table_button.png" width="300" />
-- Once the fault table is open, you should see the following faults
-<img src="figures/Our_Fault_Table.png" width="700" />
-
-3. To run the simulation, you have to press the "run" button at the top of the screen, under the "SIMULATE" part of the "Fault Analyzer" tool
-<img src="figures/run.png" width="200" />
-
-4. Once the simulation is done, you are able to see the results:
-- Press the *Data Inspector* button
-<img src="figures/data_inspector_button.png" width="150" />
-
-- See and compare the results of the simulation
-<img src="figures/Data_Inspector_our.png" width="700" />
 
 ---
 ## Contributors
