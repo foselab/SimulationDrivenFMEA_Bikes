@@ -17,11 +17,11 @@ The folder contains:
 To run the experiments and be able to open the Simulink models, ensure the following software is installed:
 
 - [MATLAB](https://it.mathworks.com/products/matlab.html?requestedDomain) version R2024a or newer (we used R2024a Update 5 - 24.1.0.2653294) and the following Add-Ons:
- - Simulink
-  - Simulink Test
-  - Simscape Electrical (Simscape)
-  - Parallel Computing Toolbox
-  - Simulink Fault Analyzer R2024a v24.1
+   - Simulink
+   - Simulink Test
+   - Simscape Electrical (Simscape)
+   - Parallel Computing Toolbox
+   - Simulink Fault Analyzer R2024a v24.1
 
 ## Replicating Our Experiment
 If you're interested in replicating our work, please follow these steps:
