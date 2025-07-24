@@ -91,7 +91,9 @@ To switch between faults, we can use the **Fault Table**
 
 <img src="figures/Fault_Table.png" width="550" />
 
-From this table, the user must select the position of the model where the fault has to be applied. Note: Only one position can be selected at a time.
+From this table, the user must select the position of the model where the fault has to be applied. 
+
+Note: It is possible to select more than one position at a time, but for any position it is possible to activate just one fault.
 The fault properties can be edited through the Property Inspector; It is also possible to apply a different fault to the same position.
 Once the simulation is started, it will run using the currently selected faults.
 
